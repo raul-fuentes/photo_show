@@ -1,19 +1,17 @@
 development:
-  adapter: mysql2
+  adapter:  postgresql
+  encoding: unicode
   database: photo_show
-  hostname: localhost
-  username: mysql
-  password: demo
-  socket: /var/run/mysqld/mysqld.sock
+  username: photo_show
+  password: photo_show
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter:  postgresql
+  encoding: unicode
   database: photo_show
-  hostname: localhost
-  username: mysql
-  password: demo
-  socket: /var/run/mysqld/mysqld.sock
+  username: photo_show
+  password: photo_show
   pool: 5
   timeout: 5000

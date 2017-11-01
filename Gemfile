@@ -54,9 +54,6 @@ end
 gem 'devise'
 gem 'devise-bootstrap-views'
 
-gem 'mysql2'
-gem 'ransack'
-
 gem 'kaminari'
 
 gem "haml-rails"
@@ -68,3 +65,4 @@ gem 'bootstrap-generators', '~> 3.3.4'
 gem "rmagick"
 #sudo aptitude install libmagick++-dev
 gem 'browser'
+gem 'pg'
