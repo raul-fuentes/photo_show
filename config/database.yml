@@ -1,17 +1,15 @@
 development:
+  host:     ec2-50-16-204-127.compute-1.amazonaws.com
   adapter:  postgresql
   encoding: unicode
-  database: photo_show
-  username: photo_show
-  password: photo_show
-  pool: 5
-  timeout: 5000
+  database: d34kudonefds2g
+  username: xdzkewoyqkjzoh
+  password: 1d1be04fe09dc62c10db7c286cf8718da0023bd81a1e38968eefd3d7ecef8e19
 
 production:
+  host:     ec2-50-16-204-127.compute-1.amazonaws.com
   adapter:  postgresql
   encoding: unicode
-  database: photo_show
-  username: photo_show
-  password: photo_show
-  pool: 5
-  timeout: 5000
+  database: d34kudonefds2g
+  username: xdzkewoyqkjzoh
+  password: 1d1be04fe09dc62c10db7c286cf8718da0023bd81a1e38968eefd3d7ecef8e19

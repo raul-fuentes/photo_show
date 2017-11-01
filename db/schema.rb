@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20171029211704) do
 
-  create_table "albums", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
     t.bigint "user_id"
     t.string "name"
     t.boolean "public"
@@ -22,7 +25,7 @@ ActiveRecord::Schema.define(version: 20171029211704) do
     t.index ["user_id"], name: "index_albums_on_user_id"
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "surnames"
