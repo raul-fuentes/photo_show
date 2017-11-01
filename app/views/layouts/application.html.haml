@@ -21,7 +21,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "Photo Show", "#", class: "navbar-brand"
+          = link_to "Photo Show", root_path, class: "navbar-brand"
         #navbar.collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li.active
@@ -36,6 +36,8 @@
                   = link_to image_tag(current_user.avatar.thumb.url), user_path(current_user.id)
                 - else
                   = link_to 'Account', user_path(current_user.id)
+              %li
+                = link_to 'Log out', destroy_user_session_path, :method => :delete
               - if current_user.admin?
                 %li
                   = link_to 'Users', users_path
