@@ -1,0 +1,16 @@
+.page-header
+  %h1 Listing public albums
+
+.table-responsive
+  %table.table.table-striped.table-bordered.table-hover
+    %thead
+      %tr
+        %th User
+        %th Name
+        %th
+    %tbody
+      - @albums.each do |album|
+        %tr
+          %td= album.user.name
+          %td= album.name
+          %td= link_to 'Show', album

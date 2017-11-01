@@ -1,0 +1,10 @@
+- photos.each_slice(4) do |images|
+  .col-md-12
+    #grid.row
+      - images.each do |image|
+        .mix.col-sm-3.margin30
+          .item-img-wrap
+            %img.img-responsive{:src => image.thumb.url}
+            .item-img-overlay
+              %a.show-image{:href => image.url, "data-lightbox" => "roadtrip"}
+                %span

@@ -1,0 +1,23 @@
+.page-header
+  = link_to albums_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    Back
+  - if @album.user == current_user
+    = link_to edit_album_path(@album), class: 'btn btn-primary' do
+      %span.glyphicon.glyphicon-pencil
+      Edit
+  %h1 Show album
+
+%dl.dl-horizontal
+  %dt User:
+  %dd= @album.user.name
+  %dt Name:
+  %dd= @album.name
+  %dt Public:
+  %dd= @album.public
+.container
+  .row
+    = render @device, photos: @photos
+  .row.gallery-bottom
+    .col-sm-6
+      = paginate @photos

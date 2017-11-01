@@ -1,0 +1,19 @@
+development:
+  adapter: mysql2
+  database: photo_show
+  hostname: localhost
+  username: mysql
+  password: demo
+  socket: /var/run/mysqld/mysqld.sock
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  database: photo_show
+  hostname: localhost
+  username: mysql
+  password: demo
+  socket: /var/run/mysqld/mysqld.sock
+  pool: 5
+  timeout: 5000
